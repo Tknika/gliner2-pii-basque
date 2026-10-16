@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv*/
+*.egg-info/
+*.log
+
+# Training outputs (checkpoints, adapters, merged models)
+outputs/
+
+# Raw downloads used to rebuild data/sources/
+data/sources/*.osm.pbf
+data/sources/cache_ine/

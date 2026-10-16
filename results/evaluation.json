@@ -1,0 +1,3058 @@
+{
+ "models": {
+  "base": "fastino/gliner2-privacy-filter-PII-multi",
+  "v1": "tknika/gliner2-PII-basque",
+  "v2": "tknika/gliner2-PII-basque-v2"
+ },
+ "threshold": 0.5,
+ "benchmarks": {
+  "nerc_id/test": {
+   "base": {
+    "span": {
+     "micro": {
+      "precision": 0.418,
+      "recall": 0.621,
+      "f1": 0.5,
+      "f1_ci95": [
+       0.479,
+       0.521
+      ],
+      "tp": 1902,
+      "fp": 2647,
+      "fn": 1159
+     },
+     "types": {
+      "person name": {
+       "precision": 0.666,
+       "recall": 0.774,
+       "f1": 0.716,
+       "support": 988,
+       "predicted": 1148
+      },
+      "location": {
+       "precision": 0.486,
+       "recall": 0.668,
+       "f1": 0.562,
+       "support": 999,
+       "predicted": 1373
+      },
+      "organization": {
+       "precision": 0.345,
+       "recall": 0.536,
+       "f1": 0.42,
+       "support": 824,
+       "predicted": 1283
+      },
+      "miscellaneous": {
+       "precision": 0.038,
+       "recall": 0.112,
+       "f1": 0.056,
+       "support": 250,
+       "predicted": 745
+      }
+     },
+     "sentences": 1846
+    },
+    "string": {
+     "micro": {
+      "precision": 0.418,
+      "recall": 0.621,
+      "f1": 0.5,
+      "f1_ci95": [
+       0.479,
+       0.521
+      ],
+      "tp": 1891,
+      "fp": 2629,
+      "fn": 1153
+     },
+     "types": {
+      "person name": {
+       "precision": 0.667,
+       "recall": 0.775,
+       "f1": 0.717,
+       "support": 985,
+       "predicted": 1144
+      },
+      "location": {
+       "precision": 0.485,
+       "recall": 0.665,
+       "f1": 0.561,
+       "support": 989,
+       "predicted": 1357
+      },
+      "organization": {
+       "precision": 0.346,
+       "recall": 0.539,
+       "f1": 0.421,
+       "support": 820,
+       "predicted": 1279
+      },
+      "miscellaneous": {
+       "precision": 0.038,
+       "recall": 0.112,
+       "f1": 0.057,
+       "support": 250,
+       "predicted": 740
+      }
+     },
+     "sentences": 1846
+    },
+    "negatives": {
+     "sentences": 429,
+     "false_positives": 577
+    }
+   },
+   "v1": {
+    "span": {
+     "micro": {
+      "precision": 0.71,
+      "recall": 0.767,
+      "f1": 0.738,
+      "f1_ci95": [
+       0.722,
+       0.754
+      ],
+      "tp": 2348,
+      "fp": 958,
+      "fn": 713
+     },
+     "types": {
+      "person name": {
+       "precision": 0.824,
+       "recall": 0.878,
+       "f1": 0.85,
+       "support": 988,
+       "predicted": 1052
+      },
+      "location": {
+       "precision": 0.72,
+       "recall": 0.804,
+       "f1": 0.759,
+       "support": 999,
+       "predicted": 1116
+      },
+      "organization": {
+       "precision": 0.585,
+       "recall": 0.715,
+       "f1": 0.643,
+       "support": 824,
+       "predicted": 1007
+      },
+      "miscellaneous": {
+       "precision": 0.679,
+       "recall": 0.356,
+       "f1": 0.467,
+       "support": 250,
+       "predicted": 131
+      }
+     },
+     "sentences": 1846
+    },
+    "string": {
+     "micro": {
+      "precision": 0.711,
+      "recall": 0.767,
+      "f1": 0.738,
+      "f1_ci95": [
+       0.723,
+       0.754
+      ],
+      "tp": 2335,
+      "fp": 947,
+      "fn": 709
+     },
+     "types": {
+      "person name": {
+       "precision": 0.825,
+       "recall": 0.877,
+       "f1": 0.85,
+       "support": 985,
+       "predicted": 1047
+      },
+      "location": {
+       "precision": 0.721,
+       "recall": 0.804,
+       "f1": 0.76,
+       "support": 989,
+       "predicted": 1103
+      },
+      "organization": {
+       "precision": 0.585,
+       "recall": 0.716,
+       "f1": 0.644,
+       "support": 820,
+       "predicted": 1003
+      },
+      "miscellaneous": {
+       "precision": 0.69,
+       "recall": 0.356,
+       "f1": 0.47,
+       "support": 250,
+       "predicted": 129
+      }
+     },
+     "sentences": 1846
+    },
+    "negatives": {
+     "sentences": 429,
+     "false_positives": 83
+    }
+   },
+   "v2": {
+    "span": {
+     "micro": {
+      "precision": 0.718,
+      "recall": 0.791,
+      "f1": 0.752,
+      "f1_ci95": [
+       0.736,
+       0.769
+      ],
+      "tp": 2420,
+      "fp": 952,
+      "fn": 641
+     },
+     "types": {
+      "person name": {
+       "precision": 0.822,
+       "recall": 0.903,
+       "f1": 0.861,
+       "support": 988,
+       "predicted": 1085
+      },
+      "location": {
+       "precision": 0.714,
+       "recall": 0.833,
+       "f1": 0.769,
+       "support": 999,
+       "predicted": 1165
+      },
+      "organization": {
+       "precision": 0.64,
+       "recall": 0.708,
+       "f1": 0.672,
+       "support": 824,
+       "predicted": 911
+      },
+      "miscellaneous": {
+       "precision": 0.536,
+       "recall": 0.452,
+       "f1": 0.49,
+       "support": 250,
+       "predicted": 211
+      }
+     },
+     "sentences": 1846
+    },
+    "string": {
+     "micro": {
+      "precision": 0.719,
+      "recall": 0.791,
+      "f1": 0.753,
+      "f1_ci95": [
+       0.737,
+       0.77
+      ],
+      "tp": 2409,
+      "fp": 942,
+      "fn": 635
+     },
+     "types": {
+      "person name": {
+       "precision": 0.822,
+       "recall": 0.903,
+       "f1": 0.861,
+       "support": 985,
+       "predicted": 1081
+      },
+      "location": {
+       "precision": 0.715,
+       "recall": 0.834,
+       "f1": 0.77,
+       "support": 989,
+       "predicted": 1154
+      },
+      "organization": {
+       "precision": 0.641,
+       "recall": 0.71,
+       "f1": 0.674,
+       "support": 820,
+       "predicted": 908
+      },
+      "miscellaneous": {
+       "precision": 0.543,
+       "recall": 0.452,
+       "f1": 0.493,
+       "support": 250,
+       "predicted": 208
+      }
+     },
+     "sentences": 1846
+    },
+    "negatives": {
+     "sentences": 429,
+     "false_positives": 82
+    }
+   },
+   "paired_deltas_span_f1": {
+    "v1 - base": {
+     "delta": 0.238,
+     "ci95": [
+      0.22,
+      0.256
+     ]
+    },
+    "v2 - base": {
+     "delta": 0.253,
+     "ci95": [
+      0.236,
+      0.271
+     ]
+    },
+    "v2 - v1": {
+     "delta": 0.015,
+     "ci95": [
+      0.003,
+      0.026
+     ]
+    }
+   }
+  },
+  "nerc_od/test": {
+   "base": {
+    "span": {
+     "micro": {
+      "precision": 0.459,
+      "recall": 0.577,
+      "f1": 0.511,
+      "f1_ci95": [
+       0.481,
+       0.541
+      ],
+      "tp": 986,
+      "fp": 1162,
+      "fn": 723
+     },
+     "types": {
+      "person name": {
+       "precision": 0.652,
+       "recall": 0.806,
+       "f1": 0.721,
+       "support": 356,
+       "predicted": 440
+      },
+      "location": {
+       "precision": 0.589,
+       "recall": 0.61,
+       "f1": 0.599,
+       "support": 876,
+       "predicted": 907
+      },
+      "organization": {
+       "precision": 0.242,
+       "recall": 0.581,
+       "f1": 0.342,
+       "support": 203,
+       "predicted": 487
+      },
+      "miscellaneous": {
+       "precision": 0.15,
+       "recall": 0.172,
+       "f1": 0.16,
+       "support": 274,
+       "predicted": 314
+      }
+     },
+     "sentences": 598
+    },
+    "string": {
+     "micro": {
+      "precision": 0.462,
+      "recall": 0.579,
+      "f1": 0.514,
+      "f1_ci95": [
+       0.483,
+       0.544
+      ],
+      "tp": 980,
+      "fp": 1139,
+      "fn": 712
+     },
+     "types": {
+      "person name": {
+       "precision": 0.66,
+       "recall": 0.808,
+       "f1": 0.727,
+       "support": 355,
+       "predicted": 435
+      },
+      "location": {
+       "precision": 0.59,
+       "recall": 0.612,
+       "f1": 0.601,
+       "support": 863,
+       "predicted": 895
+      },
+      "organization": {
+       "precision": 0.246,
+       "recall": 0.581,
+       "f1": 0.346,
+       "support": 203,
+       "predicted": 479
+      },
+      "miscellaneous": {
+       "precision": 0.152,
+       "recall": 0.173,
+       "f1": 0.162,
+       "support": 271,
+       "predicted": 310
+      }
+     },
+     "sentences": 598
+    },
+    "negatives": {
+     "sentences": 20,
+     "false_positives": 61
+    }
+   },
+   "v1": {
+    "span": {
+     "micro": {
+      "precision": 0.676,
+      "recall": 0.706,
+      "f1": 0.69,
+      "f1_ci95": [
+       0.663,
+       0.717
+      ],
+      "tp": 1206,
+      "fp": 579,
+      "fn": 503
+     },
+     "types": {
+      "person name": {
+       "precision": 0.735,
+       "recall": 0.801,
+       "f1": 0.766,
+       "support": 356,
+       "predicted": 388
+      },
+      "location": {
+       "precision": 0.765,
+       "recall": 0.793,
+       "f1": 0.779,
+       "support": 876,
+       "predicted": 909
+      },
+      "organization": {
+       "precision": 0.362,
+       "recall": 0.65,
+       "f1": 0.465,
+       "support": 203,
+       "predicted": 365
+      },
+      "miscellaneous": {
+       "precision": 0.764,
+       "recall": 0.343,
+       "f1": 0.474,
+       "support": 274,
+       "predicted": 123
+      }
+     },
+     "sentences": 598
+    },
+    "string": {
+     "micro": {
+      "precision": 0.679,
+      "recall": 0.707,
+      "f1": 0.693,
+      "f1_ci95": [
+       0.665,
+       0.72
+      ],
+      "tp": 1197,
+      "fp": 565,
+      "fn": 495
+     },
+     "types": {
+      "person name": {
+       "precision": 0.736,
+       "recall": 0.803,
+       "f1": 0.768,
+       "support": 355,
+       "predicted": 387
+      },
+      "location": {
+       "precision": 0.766,
+       "recall": 0.795,
+       "f1": 0.78,
+       "support": 863,
+       "predicted": 895
+      },
+      "organization": {
+       "precision": 0.37,
+       "recall": 0.65,
+       "f1": 0.471,
+       "support": 203,
+       "predicted": 357
+      },
+      "miscellaneous": {
+       "precision": 0.764,
+       "recall": 0.347,
+       "f1": 0.477,
+       "support": 271,
+       "predicted": 123
+      }
+     },
+     "sentences": 598
+    },
+    "negatives": {
+     "sentences": 20,
+     "false_positives": 11
+    }
+   },
+   "v2": {
+    "span": {
+     "micro": {
+      "precision": 0.696,
+      "recall": 0.74,
+      "f1": 0.717,
+      "f1_ci95": [
+       0.692,
+       0.744
+      ],
+      "tp": 1264,
+      "fp": 553,
+      "fn": 445
+     },
+     "types": {
+      "person name": {
+       "precision": 0.69,
+       "recall": 0.837,
+       "f1": 0.756,
+       "support": 356,
+       "predicted": 432
+      },
+      "location": {
+       "precision": 0.773,
+       "recall": 0.817,
+       "f1": 0.795,
+       "support": 876,
+       "predicted": 926
+      },
+      "organization": {
+       "precision": 0.459,
+       "recall": 0.601,
+       "f1": 0.52,
+       "support": 203,
+       "predicted": 266
+      },
+      "miscellaneous": {
+       "precision": 0.663,
+       "recall": 0.467,
+       "f1": 0.548,
+       "support": 274,
+       "predicted": 193
+      }
+     },
+     "sentences": 598
+    },
+    "string": {
+     "micro": {
+      "precision": 0.698,
+      "recall": 0.741,
+      "f1": 0.719,
+      "f1_ci95": [
+       0.693,
+       0.744
+      ],
+      "tp": 1254,
+      "fp": 543,
+      "fn": 438
+     },
+     "types": {
+      "person name": {
+       "precision": 0.691,
+       "recall": 0.839,
+       "f1": 0.758,
+       "support": 355,
+       "predicted": 431
+      },
+      "location": {
+       "precision": 0.776,
+       "recall": 0.817,
+       "f1": 0.796,
+       "support": 863,
+       "predicted": 909
+      },
+      "organization": {
+       "precision": 0.462,
+       "recall": 0.601,
+       "f1": 0.522,
+       "support": 203,
+       "predicted": 264
+      },
+      "miscellaneous": {
+       "precision": 0.668,
+       "recall": 0.476,
+       "f1": 0.556,
+       "support": 271,
+       "predicted": 193
+      }
+     },
+     "sentences": 598
+    },
+    "negatives": {
+     "sentences": 20,
+     "false_positives": 10
+    }
+   },
+   "paired_deltas_span_f1": {
+    "v1 - base": {
+     "delta": 0.179,
+     "ci95": [
+      0.152,
+      0.204
+     ]
+    },
+    "v2 - base": {
+     "delta": 0.206,
+     "ci95": [
+      0.18,
+      0.233
+     ]
+    },
+    "v2 - v1": {
+     "delta": 0.027,
+     "ci95": [
+      0.01,
+      0.044
+     ]
+    }
+   }
+  },
+  "nerc_id/validation": {
+   "base": {
+    "span": {
+     "micro": {
+      "precision": 0.412,
+      "recall": 0.608,
+      "f1": 0.491,
+      "f1_ci95": [
+       0.461,
+       0.521
+      ],
+      "tp": 742,
+      "fp": 1060,
+      "fn": 479
+     },
+     "types": {
+      "person name": {
+       "precision": 0.645,
+       "recall": 0.755,
+       "f1": 0.695,
+       "support": 387,
+       "predicted": 453
+      },
+      "location": {
+       "precision": 0.448,
+       "recall": 0.622,
+       "f1": 0.521,
+       "support": 368,
+       "predicted": 511
+      },
+      "organization": {
+       "precision": 0.388,
+       "recall": 0.55,
+       "f1": 0.455,
+       "support": 389,
+       "predicted": 552
+      },
+      "miscellaneous": {
+       "precision": 0.024,
+       "recall": 0.091,
+       "f1": 0.039,
+       "support": 77,
+       "predicted": 286
+      }
+     },
+     "sentences": 711
+    },
+    "string": {
+     "micro": {
+      "precision": 0.41,
+      "recall": 0.605,
+      "f1": 0.489,
+      "f1_ci95": [
+       0.458,
+       0.519
+      ],
+      "tp": 727,
+      "fp": 1046,
+      "fn": 475
+     },
+     "types": {
+      "person name": {
+       "precision": 0.644,
+       "recall": 0.754,
+       "f1": 0.695,
+       "support": 382,
+       "predicted": 447
+      },
+      "location": {
+       "precision": 0.449,
+       "recall": 0.622,
+       "f1": 0.521,
+       "support": 362,
+       "predicted": 501
+      },
+      "organization": {
+       "precision": 0.383,
+       "recall": 0.543,
+       "f1": 0.449,
+       "support": 381,
+       "predicted": 541
+      },
+      "miscellaneous": {
+       "precision": 0.025,
+       "recall": 0.091,
+       "f1": 0.039,
+       "support": 77,
+       "predicted": 284
+      }
+     },
+     "sentences": 711
+    },
+    "negatives": {
+     "sentences": 174,
+     "false_positives": 255
+    }
+   },
+   "v1": {
+    "span": {
+     "micro": {
+      "precision": 0.692,
+      "recall": 0.763,
+      "f1": 0.726,
+      "f1_ci95": [
+       0.698,
+       0.753
+      ],
+      "tp": 932,
+      "fp": 415,
+      "fn": 289
+     },
+     "types": {
+      "person name": {
+       "precision": 0.804,
+       "recall": 0.86,
+       "f1": 0.831,
+       "support": 387,
+       "predicted": 414
+      },
+      "location": {
+       "precision": 0.653,
+       "recall": 0.804,
+       "f1": 0.721,
+       "support": 368,
+       "predicted": 453
+      },
+      "organization": {
+       "precision": 0.642,
+       "recall": 0.738,
+       "f1": 0.687,
+       "support": 389,
+       "predicted": 447
+      },
+      "miscellaneous": {
+       "precision": 0.485,
+       "recall": 0.208,
+       "f1": 0.291,
+       "support": 77,
+       "predicted": 33
+      }
+     },
+     "sentences": 711
+    },
+    "string": {
+     "micro": {
+      "precision": 0.692,
+      "recall": 0.76,
+      "f1": 0.725,
+      "f1_ci95": [
+       0.697,
+       0.753
+      ],
+      "tp": 914,
+      "fp": 406,
+      "fn": 288
+     },
+     "types": {
+      "person name": {
+       "precision": 0.806,
+       "recall": 0.861,
+       "f1": 0.833,
+       "support": 382,
+       "predicted": 408
+      },
+      "location": {
+       "precision": 0.655,
+       "recall": 0.801,
+       "f1": 0.72,
+       "support": 362,
+       "predicted": 443
+      },
+      "organization": {
+       "precision": 0.64,
+       "recall": 0.732,
+       "f1": 0.683,
+       "support": 381,
+       "predicted": 436
+      },
+      "miscellaneous": {
+       "precision": 0.485,
+       "recall": 0.208,
+       "f1": 0.291,
+       "support": 77,
+       "predicted": 33
+      }
+     },
+     "sentences": 711
+    },
+    "negatives": {
+     "sentences": 174,
+     "false_positives": 53
+    }
+   },
+   "v2": {
+    "span": {
+     "micro": {
+      "precision": 0.681,
+      "recall": 0.796,
+      "f1": 0.734,
+      "f1_ci95": [
+       0.707,
+       0.762
+      ],
+      "tp": 972,
+      "fp": 456,
+      "fn": 249
+     },
+     "types": {
+      "person name": {
+       "precision": 0.772,
+       "recall": 0.884,
+       "f1": 0.824,
+       "support": 387,
+       "predicted": 443
+      },
+      "location": {
+       "precision": 0.644,
+       "recall": 0.837,
+       "f1": 0.728,
+       "support": 368,
+       "predicted": 478
+      },
+      "organization": {
+       "precision": 0.68,
+       "recall": 0.758,
+       "f1": 0.717,
+       "support": 389,
+       "predicted": 434
+      },
+      "miscellaneous": {
+       "precision": 0.37,
+       "recall": 0.351,
+       "f1": 0.36,
+       "support": 77,
+       "predicted": 73
+      }
+     },
+     "sentences": 711
+    },
+    "string": {
+     "micro": {
+      "precision": 0.679,
+      "recall": 0.795,
+      "f1": 0.732,
+      "f1_ci95": [
+       0.706,
+       0.761
+      ],
+      "tp": 955,
+      "fp": 452,
+      "fn": 247
+     },
+     "types": {
+      "person name": {
+       "precision": 0.772,
+       "recall": 0.885,
+       "f1": 0.824,
+       "support": 382,
+       "predicted": 438
+      },
+      "location": {
+       "precision": 0.643,
+       "recall": 0.837,
+       "f1": 0.727,
+       "support": 362,
+       "predicted": 471
+      },
+      "organization": {
+       "precision": 0.675,
+       "recall": 0.753,
+       "f1": 0.712,
+       "support": 381,
+       "predicted": 425
+      },
+      "miscellaneous": {
+       "precision": 0.37,
+       "recall": 0.351,
+       "f1": 0.36,
+       "support": 77,
+       "predicted": 73
+      }
+     },
+     "sentences": 711
+    },
+    "negatives": {
+     "sentences": 174,
+     "false_positives": 55
+    }
+   },
+   "paired_deltas_span_f1": {
+    "v1 - base": {
+     "delta": 0.235,
+     "ci95": [
+      0.208,
+      0.263
+     ]
+    },
+    "v2 - base": {
+     "delta": 0.243,
+     "ci95": [
+      0.217,
+      0.272
+     ]
+    },
+    "v2 - v1": {
+     "delta": 0.008,
+     "ci95": [
+      -0.009,
+      0.025
+     ]
+    }
+   }
+  },
+  "nerc_od/validation": {
+   "base": {
+    "span": {
+     "micro": {
+      "precision": 0.478,
+      "recall": 0.602,
+      "f1": 0.533,
+      "f1_ci95": [
+       0.502,
+       0.563
+      ],
+      "tp": 1070,
+      "fp": 1168,
+      "fn": 707
+     },
+     "types": {
+      "person name": {
+       "precision": 0.678,
+       "recall": 0.763,
+       "f1": 0.718,
+       "support": 439,
+       "predicted": 494
+      },
+      "location": {
+       "precision": 0.577,
+       "recall": 0.665,
+       "f1": 0.618,
+       "support": 791,
+       "predicted": 911
+      },
+      "organization": {
+       "precision": 0.289,
+       "recall": 0.619,
+       "f1": 0.394,
+       "support": 223,
+       "predicted": 477
+      },
+      "miscellaneous": {
+       "precision": 0.199,
+       "recall": 0.219,
+       "f1": 0.209,
+       "support": 324,
+       "predicted": 356
+      }
+     },
+     "sentences": 601
+    },
+    "string": {
+     "micro": {
+      "precision": 0.482,
+      "recall": 0.603,
+      "f1": 0.536,
+      "f1_ci95": [
+       0.505,
+       0.566
+      ],
+      "tp": 1065,
+      "fp": 1145,
+      "fn": 700
+     },
+     "types": {
+      "person name": {
+       "precision": 0.684,
+       "recall": 0.763,
+       "f1": 0.721,
+       "support": 439,
+       "predicted": 490
+      },
+      "location": {
+       "precision": 0.581,
+       "recall": 0.666,
+       "f1": 0.621,
+       "support": 782,
+       "predicted": 897
+      },
+      "organization": {
+       "precision": 0.294,
+       "recall": 0.619,
+       "f1": 0.398,
+       "support": 223,
+       "predicted": 470
+      },
+      "miscellaneous": {
+       "precision": 0.201,
+       "recall": 0.221,
+       "f1": 0.211,
+       "support": 321,
+       "predicted": 353
+      }
+     },
+     "sentences": 601
+    },
+    "negatives": {
+     "sentences": 18,
+     "false_positives": 50
+    }
+   },
+   "v1": {
+    "span": {
+     "micro": {
+      "precision": 0.686,
+      "recall": 0.718,
+      "f1": 0.701,
+      "f1_ci95": [
+       0.673,
+       0.729
+      ],
+      "tp": 1275,
+      "fp": 584,
+      "fn": 502
+     },
+     "types": {
+      "person name": {
+       "precision": 0.768,
+       "recall": 0.813,
+       "f1": 0.79,
+       "support": 439,
+       "predicted": 465
+      },
+      "location": {
+       "precision": 0.746,
+       "recall": 0.807,
+       "f1": 0.775,
+       "support": 791,
+       "predicted": 855
+      },
+      "organization": {
+       "precision": 0.395,
+       "recall": 0.65,
+       "f1": 0.492,
+       "support": 223,
+       "predicted": 367
+      },
+      "miscellaneous": {
+       "precision": 0.785,
+       "recall": 0.417,
+       "f1": 0.544,
+       "support": 324,
+       "predicted": 172
+      }
+     },
+     "sentences": 601
+    },
+    "string": {
+     "micro": {
+      "precision": 0.691,
+      "recall": 0.718,
+      "f1": 0.704,
+      "f1_ci95": [
+       0.676,
+       0.732
+      ],
+      "tp": 1267,
+      "fp": 566,
+      "fn": 498
+     },
+     "types": {
+      "person name": {
+       "precision": 0.769,
+       "recall": 0.813,
+       "f1": 0.791,
+       "support": 439,
+       "predicted": 464
+      },
+      "location": {
+       "precision": 0.748,
+       "recall": 0.806,
+       "f1": 0.776,
+       "support": 782,
+       "predicted": 842
+      },
+      "organization": {
+       "precision": 0.407,
+       "recall": 0.65,
+       "f1": 0.501,
+       "support": 223,
+       "predicted": 356
+      },
+      "miscellaneous": {
+       "precision": 0.789,
+       "recall": 0.421,
+       "f1": 0.549,
+       "support": 321,
+       "predicted": 171
+      }
+     },
+     "sentences": 601
+    },
+    "negatives": {
+     "sentences": 18,
+     "false_positives": 10
+    }
+   },
+   "v2": {
+    "span": {
+     "micro": {
+      "precision": 0.695,
+      "recall": 0.742,
+      "f1": 0.718,
+      "f1_ci95": [
+       0.691,
+       0.744
+      ],
+      "tp": 1319,
+      "fp": 579,
+      "fn": 458
+     },
+     "types": {
+      "person name": {
+       "precision": 0.72,
+       "recall": 0.831,
+       "f1": 0.772,
+       "support": 439,
+       "predicted": 507
+      },
+      "location": {
+       "precision": 0.749,
+       "recall": 0.834,
+       "f1": 0.789,
+       "support": 791,
+       "predicted": 881
+      },
+      "organization": {
+       "precision": 0.469,
+       "recall": 0.601,
+       "f1": 0.527,
+       "support": 223,
+       "predicted": 286
+      },
+      "miscellaneous": {
+       "precision": 0.714,
+       "recall": 0.494,
+       "f1": 0.584,
+       "support": 324,
+       "predicted": 224
+      }
+     },
+     "sentences": 601
+    },
+    "string": {
+     "micro": {
+      "precision": 0.701,
+      "recall": 0.743,
+      "f1": 0.721,
+      "f1_ci95": [
+       0.694,
+       0.748
+      ],
+      "tp": 1311,
+      "fp": 560,
+      "fn": 454
+     },
+     "types": {
+      "person name": {
+       "precision": 0.723,
+       "recall": 0.831,
+       "f1": 0.773,
+       "support": 439,
+       "predicted": 505
+      },
+      "location": {
+       "precision": 0.753,
+       "recall": 0.835,
+       "f1": 0.792,
+       "support": 782,
+       "predicted": 867
+      },
+      "organization": {
+       "precision": 0.48,
+       "recall": 0.601,
+       "f1": 0.534,
+       "support": 223,
+       "predicted": 279
+      },
+      "miscellaneous": {
+       "precision": 0.723,
+       "recall": 0.495,
+       "f1": 0.588,
+       "support": 321,
+       "predicted": 220
+      }
+     },
+     "sentences": 601
+    },
+    "negatives": {
+     "sentences": 18,
+     "false_positives": 10
+    }
+   },
+   "paired_deltas_span_f1": {
+    "v1 - base": {
+     "delta": 0.168,
+     "ci95": [
+      0.144,
+      0.19
+     ]
+    },
+    "v2 - base": {
+     "delta": 0.185,
+     "ci95": [
+      0.159,
+      0.209
+     ]
+    },
+    "v2 - v1": {
+     "delta": 0.017,
+     "ci95": [
+      0.0,
+      0.032
+     ]
+    }
+   }
+  },
+  "pii-heldout": {
+   "base": {
+    "span": {
+     "micro": {
+      "precision": 0.672,
+      "recall": 0.828,
+      "f1": 0.742,
+      "f1_ci95": [
+       0.727,
+       0.757
+      ],
+      "tp": 2038,
+      "fp": 995,
+      "fn": 424
+     },
+     "types": {
+      "person name": {
+       "precision": 0.82,
+       "recall": 0.962,
+       "f1": 0.885,
+       "support": 474,
+       "predicted": 556
+      },
+      "email": {
+       "precision": 0.767,
+       "recall": 1.0,
+       "f1": 0.868,
+       "support": 171,
+       "predicted": 223
+      },
+      "phone number": {
+       "precision": 0.934,
+       "recall": 0.988,
+       "f1": 0.96,
+       "support": 242,
+       "predicted": 256
+      },
+      "national id": {
+       "precision": 1.0,
+       "recall": 0.637,
+       "f1": 0.778,
+       "support": 168,
+       "predicted": 107
+      },
+      "bank account number": {
+       "precision": 0.985,
+       "recall": 0.8,
+       "f1": 0.883,
+       "support": 80,
+       "predicted": 65
+      },
+      "credit card number": {
+       "precision": 0.909,
+       "recall": 0.947,
+       "f1": 0.928,
+       "support": 95,
+       "predicted": 99
+      },
+      "date of birth": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 70,
+       "predicted": 70
+      },
+      "date": {
+       "precision": 0.435,
+       "recall": 1.0,
+       "f1": 0.607,
+       "support": 175,
+       "predicted": 402
+      },
+      "address": {
+       "precision": 0.016,
+       "recall": 0.014,
+       "f1": 0.015,
+       "support": 70,
+       "predicted": 61
+      },
+      "city": {
+       "precision": 0.82,
+       "recall": 0.913,
+       "f1": 0.864,
+       "support": 150,
+       "predicted": 167
+      },
+      "location": {
+       "precision": 0.365,
+       "recall": 1.0,
+       "f1": 0.534,
+       "support": 93,
+       "predicted": 255
+      },
+      "zip code": {
+       "precision": 0.387,
+       "recall": 1.0,
+       "f1": 0.558,
+       "support": 70,
+       "predicted": 181
+      },
+      "age": {
+       "precision": 0.212,
+       "recall": 0.212,
+       "f1": 0.212,
+       "support": 80,
+       "predicted": 80
+      },
+      "organization": {
+       "precision": 0.446,
+       "recall": 0.882,
+       "f1": 0.592,
+       "support": 93,
+       "predicted": 184
+      },
+      "user name": {
+       "precision": 0.909,
+       "recall": 0.824,
+       "f1": 0.865,
+       "support": 182,
+       "predicted": 165
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.161,
+       "f1": 0.277,
+       "support": 87,
+       "predicted": 14
+      },
+      "student id": {
+       "precision": 0.689,
+       "recall": 0.63,
+       "f1": 0.658,
+       "support": 162,
+       "predicted": 148
+      }
+     },
+     "sentences": 1000
+    },
+    "string": {
+     "micro": {
+      "precision": 0.672,
+      "recall": 0.828,
+      "f1": 0.742,
+      "f1_ci95": [
+       0.727,
+       0.757
+      ],
+      "tp": 2038,
+      "fp": 993,
+      "fn": 424
+     },
+     "types": {
+      "person name": {
+       "precision": 0.82,
+       "recall": 0.962,
+       "f1": 0.885,
+       "support": 474,
+       "predicted": 556
+      },
+      "email": {
+       "precision": 0.767,
+       "recall": 1.0,
+       "f1": 0.868,
+       "support": 171,
+       "predicted": 223
+      },
+      "phone number": {
+       "precision": 0.934,
+       "recall": 0.988,
+       "f1": 0.96,
+       "support": 242,
+       "predicted": 256
+      },
+      "national id": {
+       "precision": 1.0,
+       "recall": 0.637,
+       "f1": 0.778,
+       "support": 168,
+       "predicted": 107
+      },
+      "bank account number": {
+       "precision": 0.985,
+       "recall": 0.8,
+       "f1": 0.883,
+       "support": 80,
+       "predicted": 65
+      },
+      "credit card number": {
+       "precision": 0.909,
+       "recall": 0.947,
+       "f1": 0.928,
+       "support": 95,
+       "predicted": 99
+      },
+      "date of birth": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 70,
+       "predicted": 70
+      },
+      "date": {
+       "precision": 0.435,
+       "recall": 1.0,
+       "f1": 0.607,
+       "support": 175,
+       "predicted": 402
+      },
+      "address": {
+       "precision": 0.016,
+       "recall": 0.014,
+       "f1": 0.015,
+       "support": 70,
+       "predicted": 61
+      },
+      "city": {
+       "precision": 0.825,
+       "recall": 0.913,
+       "f1": 0.867,
+       "support": 150,
+       "predicted": 166
+      },
+      "location": {
+       "precision": 0.365,
+       "recall": 1.0,
+       "f1": 0.534,
+       "support": 93,
+       "predicted": 255
+      },
+      "zip code": {
+       "precision": 0.387,
+       "recall": 1.0,
+       "f1": 0.558,
+       "support": 70,
+       "predicted": 181
+      },
+      "age": {
+       "precision": 0.212,
+       "recall": 0.212,
+       "f1": 0.212,
+       "support": 80,
+       "predicted": 80
+      },
+      "organization": {
+       "precision": 0.448,
+       "recall": 0.882,
+       "f1": 0.594,
+       "support": 93,
+       "predicted": 183
+      },
+      "user name": {
+       "precision": 0.909,
+       "recall": 0.824,
+       "f1": 0.865,
+       "support": 182,
+       "predicted": 165
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.161,
+       "f1": 0.277,
+       "support": 87,
+       "predicted": 14
+      },
+      "student id": {
+       "precision": 0.689,
+       "recall": 0.63,
+       "f1": 0.658,
+       "support": 162,
+       "predicted": 148
+      }
+     },
+     "sentences": 1000
+    },
+    "negatives": {
+     "sentences": 159,
+     "false_positives": 225
+    },
+    "slices": {
+     "language": {
+      "eu": {
+       "sentences": 573,
+       "f1": 0.72
+      },
+      "es": {
+       "sentences": 257,
+       "f1": 0.766
+      },
+      "fr": {
+       "sentences": 170,
+       "f1": 0.78
+      }
+     },
+     "person_name_recall_by_sex": {
+      "female": {
+       "mentions": 216,
+       "recall": 0.954
+      },
+      "male": {
+       "mentions": 258,
+       "recall": 0.969
+      }
+     }
+    }
+   },
+   "v1": {
+    "span": {
+     "micro": {
+      "precision": 0.793,
+      "recall": 0.904,
+      "f1": 0.845,
+      "f1_ci95": [
+       0.832,
+       0.858
+      ],
+      "tp": 2225,
+      "fp": 582,
+      "fn": 237
+     },
+     "types": {
+      "person name": {
+       "precision": 0.927,
+       "recall": 0.987,
+       "f1": 0.956,
+       "support": 474,
+       "predicted": 505
+      },
+      "email": {
+       "precision": 0.501,
+       "recall": 1.0,
+       "f1": 0.668,
+       "support": 171,
+       "predicted": 341
+      },
+      "phone number": {
+       "precision": 0.86,
+       "recall": 0.988,
+       "f1": 0.919,
+       "support": 242,
+       "predicted": 278
+      },
+      "national id": {
+       "precision": 0.887,
+       "recall": 0.655,
+       "f1": 0.753,
+       "support": 168,
+       "predicted": 124
+      },
+      "bank account number": {
+       "precision": 0.702,
+       "recall": 1.0,
+       "f1": 0.825,
+       "support": 80,
+       "predicted": 114
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 0.968,
+       "f1": 0.984,
+       "support": 95,
+       "predicted": 92
+      },
+      "date of birth": {
+       "precision": 0.805,
+       "recall": 1.0,
+       "f1": 0.892,
+       "support": 70,
+       "predicted": 87
+      },
+      "date": {
+       "precision": 0.888,
+       "recall": 1.0,
+       "f1": 0.941,
+       "support": 175,
+       "predicted": 197
+      },
+      "address": {
+       "precision": 0.588,
+       "recall": 1.0,
+       "f1": 0.741,
+       "support": 70,
+       "predicted": 119
+      },
+      "city": {
+       "precision": 0.892,
+       "recall": 0.713,
+       "f1": 0.793,
+       "support": 150,
+       "predicted": 120
+      },
+      "location": {
+       "precision": 0.827,
+       "recall": 0.462,
+       "f1": 0.593,
+       "support": 93,
+       "predicted": 52
+      },
+      "zip code": {
+       "precision": 0.611,
+       "recall": 0.986,
+       "f1": 0.754,
+       "support": 70,
+       "predicted": 113
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 80,
+       "predicted": 80
+      },
+      "organization": {
+       "precision": 0.778,
+       "recall": 0.828,
+       "f1": 0.802,
+       "support": 93,
+       "predicted": 99
+      },
+      "user name": {
+       "precision": 0.707,
+       "recall": 0.835,
+       "f1": 0.766,
+       "support": 182,
+       "predicted": 215
+      },
+      "personal url": {
+       "precision": 0.974,
+       "recall": 0.862,
+       "f1": 0.915,
+       "support": 87,
+       "predicted": 77
+      },
+      "student id": {
+       "precision": 0.758,
+       "recall": 0.907,
+       "f1": 0.826,
+       "support": 162,
+       "predicted": 194
+      }
+     },
+     "sentences": 1000
+    },
+    "string": {
+     "micro": {
+      "precision": 0.793,
+      "recall": 0.904,
+      "f1": 0.845,
+      "f1_ci95": [
+       0.833,
+       0.858
+      ],
+      "tp": 2225,
+      "fp": 581,
+      "fn": 237
+     },
+     "types": {
+      "person name": {
+       "precision": 0.927,
+       "recall": 0.987,
+       "f1": 0.956,
+       "support": 474,
+       "predicted": 505
+      },
+      "email": {
+       "precision": 0.501,
+       "recall": 1.0,
+       "f1": 0.668,
+       "support": 171,
+       "predicted": 341
+      },
+      "phone number": {
+       "precision": 0.86,
+       "recall": 0.988,
+       "f1": 0.919,
+       "support": 242,
+       "predicted": 278
+      },
+      "national id": {
+       "precision": 0.887,
+       "recall": 0.655,
+       "f1": 0.753,
+       "support": 168,
+       "predicted": 124
+      },
+      "bank account number": {
+       "precision": 0.702,
+       "recall": 1.0,
+       "f1": 0.825,
+       "support": 80,
+       "predicted": 114
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 0.968,
+       "f1": 0.984,
+       "support": 95,
+       "predicted": 92
+      },
+      "date of birth": {
+       "precision": 0.805,
+       "recall": 1.0,
+       "f1": 0.892,
+       "support": 70,
+       "predicted": 87
+      },
+      "date": {
+       "precision": 0.888,
+       "recall": 1.0,
+       "f1": 0.941,
+       "support": 175,
+       "predicted": 197
+      },
+      "address": {
+       "precision": 0.588,
+       "recall": 1.0,
+       "f1": 0.741,
+       "support": 70,
+       "predicted": 119
+      },
+      "city": {
+       "precision": 0.899,
+       "recall": 0.713,
+       "f1": 0.796,
+       "support": 150,
+       "predicted": 119
+      },
+      "location": {
+       "precision": 0.827,
+       "recall": 0.462,
+       "f1": 0.593,
+       "support": 93,
+       "predicted": 52
+      },
+      "zip code": {
+       "precision": 0.611,
+       "recall": 0.986,
+       "f1": 0.754,
+       "support": 70,
+       "predicted": 113
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 80,
+       "predicted": 80
+      },
+      "organization": {
+       "precision": 0.778,
+       "recall": 0.828,
+       "f1": 0.802,
+       "support": 93,
+       "predicted": 99
+      },
+      "user name": {
+       "precision": 0.707,
+       "recall": 0.835,
+       "f1": 0.766,
+       "support": 182,
+       "predicted": 215
+      },
+      "personal url": {
+       "precision": 0.974,
+       "recall": 0.862,
+       "f1": 0.915,
+       "support": 87,
+       "predicted": 77
+      },
+      "student id": {
+       "precision": 0.758,
+       "recall": 0.907,
+       "f1": 0.826,
+       "support": 162,
+       "predicted": 194
+      }
+     },
+     "sentences": 1000
+    },
+    "negatives": {
+     "sentences": 159,
+     "false_positives": 39
+    },
+    "slices": {
+     "language": {
+      "eu": {
+       "sentences": 573,
+       "f1": 0.83
+      },
+      "es": {
+       "sentences": 257,
+       "f1": 0.891
+      },
+      "fr": {
+       "sentences": 170,
+       "f1": 0.828
+      }
+     },
+     "person_name_recall_by_sex": {
+      "female": {
+       "mentions": 216,
+       "recall": 0.991
+      },
+      "male": {
+       "mentions": 258,
+       "recall": 0.984
+      }
+     }
+    }
+   },
+   "v2": {
+    "span": {
+     "micro": {
+      "precision": 0.881,
+      "recall": 0.931,
+      "f1": 0.905,
+      "f1_ci95": [
+       0.895,
+       0.915
+      ],
+      "tp": 2292,
+      "fp": 310,
+      "fn": 170
+     },
+     "types": {
+      "person name": {
+       "precision": 0.81,
+       "recall": 0.996,
+       "f1": 0.893,
+       "support": 474,
+       "predicted": 583
+      },
+      "email": {
+       "precision": 0.977,
+       "recall": 1.0,
+       "f1": 0.988,
+       "support": 171,
+       "predicted": 175
+      },
+      "phone number": {
+       "precision": 0.931,
+       "recall": 1.0,
+       "f1": 0.964,
+       "support": 242,
+       "predicted": 260
+      },
+      "national id": {
+       "precision": 0.552,
+       "recall": 0.637,
+       "f1": 0.591,
+       "support": 168,
+       "predicted": 194
+      },
+      "bank account number": {
+       "precision": 0.988,
+       "recall": 1.0,
+       "f1": 0.994,
+       "support": 80,
+       "predicted": 81
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 0.863,
+       "f1": 0.927,
+       "support": 95,
+       "predicted": 82
+      },
+      "date of birth": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 70,
+       "predicted": 70
+      },
+      "date": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 175,
+       "predicted": 175
+      },
+      "address": {
+       "precision": 0.971,
+       "recall": 0.971,
+       "f1": 0.971,
+       "support": 70,
+       "predicted": 70
+      },
+      "city": {
+       "precision": 0.846,
+       "recall": 0.987,
+       "f1": 0.911,
+       "support": 150,
+       "predicted": 175
+      },
+      "location": {
+       "precision": 0.953,
+       "recall": 0.441,
+       "f1": 0.603,
+       "support": 93,
+       "predicted": 43
+      },
+      "zip code": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 70,
+       "predicted": 70
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 80,
+       "predicted": 80
+      },
+      "organization": {
+       "precision": 0.625,
+       "recall": 0.914,
+       "f1": 0.742,
+       "support": 93,
+       "predicted": 136
+      },
+      "user name": {
+       "precision": 1.0,
+       "recall": 0.863,
+       "f1": 0.926,
+       "support": 182,
+       "predicted": 157
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.943,
+       "f1": 0.97,
+       "support": 87,
+       "predicted": 82
+      },
+      "student id": {
+       "precision": 0.959,
+       "recall": 1.0,
+       "f1": 0.979,
+       "support": 162,
+       "predicted": 169
+      }
+     },
+     "sentences": 1000
+    },
+    "string": {
+     "micro": {
+      "precision": 0.881,
+      "recall": 0.931,
+      "f1": 0.905,
+      "f1_ci95": [
+       0.895,
+       0.915
+      ],
+      "tp": 2292,
+      "fp": 309,
+      "fn": 170
+     },
+     "types": {
+      "person name": {
+       "precision": 0.81,
+       "recall": 0.996,
+       "f1": 0.893,
+       "support": 474,
+       "predicted": 583
+      },
+      "email": {
+       "precision": 0.977,
+       "recall": 1.0,
+       "f1": 0.988,
+       "support": 171,
+       "predicted": 175
+      },
+      "phone number": {
+       "precision": 0.931,
+       "recall": 1.0,
+       "f1": 0.964,
+       "support": 242,
+       "predicted": 260
+      },
+      "national id": {
+       "precision": 0.552,
+       "recall": 0.637,
+       "f1": 0.591,
+       "support": 168,
+       "predicted": 194
+      },
+      "bank account number": {
+       "precision": 0.988,
+       "recall": 1.0,
+       "f1": 0.994,
+       "support": 80,
+       "predicted": 81
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 0.863,
+       "f1": 0.927,
+       "support": 95,
+       "predicted": 82
+      },
+      "date of birth": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 70,
+       "predicted": 70
+      },
+      "date": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 175,
+       "predicted": 175
+      },
+      "address": {
+       "precision": 0.971,
+       "recall": 0.971,
+       "f1": 0.971,
+       "support": 70,
+       "predicted": 70
+      },
+      "city": {
+       "precision": 0.851,
+       "recall": 0.987,
+       "f1": 0.914,
+       "support": 150,
+       "predicted": 174
+      },
+      "location": {
+       "precision": 0.953,
+       "recall": 0.441,
+       "f1": 0.603,
+       "support": 93,
+       "predicted": 43
+      },
+      "zip code": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 70,
+       "predicted": 70
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 80,
+       "predicted": 80
+      },
+      "organization": {
+       "precision": 0.625,
+       "recall": 0.914,
+       "f1": 0.742,
+       "support": 93,
+       "predicted": 136
+      },
+      "user name": {
+       "precision": 1.0,
+       "recall": 0.863,
+       "f1": 0.926,
+       "support": 182,
+       "predicted": 157
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.943,
+       "f1": 0.97,
+       "support": 87,
+       "predicted": 82
+      },
+      "student id": {
+       "precision": 0.959,
+       "recall": 1.0,
+       "f1": 0.979,
+       "support": 162,
+       "predicted": 169
+      }
+     },
+     "sentences": 1000
+    },
+    "negatives": {
+     "sentences": 159,
+     "false_positives": 0
+    },
+    "slices": {
+     "language": {
+      "eu": {
+       "sentences": 573,
+       "f1": 0.911
+      },
+      "es": {
+       "sentences": 257,
+       "f1": 0.906
+      },
+      "fr": {
+       "sentences": 170,
+       "f1": 0.884
+      }
+     },
+     "person_name_recall_by_sex": {
+      "female": {
+       "mentions": 216,
+       "recall": 0.995
+      },
+      "male": {
+       "mentions": 258,
+       "recall": 0.996
+      }
+     }
+    }
+   },
+   "paired_deltas_span_f1": {
+    "v1 - base": {
+     "delta": 0.103,
+     "ci95": [
+      0.09,
+      0.117
+     ]
+    },
+    "v2 - base": {
+     "delta": 0.163,
+     "ci95": [
+      0.148,
+      0.178
+     ]
+    },
+    "v2 - v1": {
+     "delta": 0.061,
+     "ci95": [
+      0.05,
+      0.071
+     ]
+    }
+   }
+  },
+  "pii-in-template": {
+   "base": {
+    "span": {
+     "micro": {
+      "precision": 0.679,
+      "recall": 0.794,
+      "f1": 0.732,
+      "f1_ci95": [
+       0.719,
+       0.745
+      ],
+      "tp": 2656,
+      "fp": 1253,
+      "fn": 690
+     },
+     "types": {
+      "person name": {
+       "precision": 0.89,
+       "recall": 0.896,
+       "f1": 0.893,
+       "support": 587,
+       "predicted": 591
+      },
+      "email": {
+       "precision": 0.994,
+       "recall": 1.0,
+       "f1": 0.997,
+       "support": 340,
+       "predicted": 342
+      },
+      "phone number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 248,
+       "predicted": 248
+      },
+      "national id": {
+       "precision": 0.971,
+       "recall": 0.642,
+       "f1": 0.773,
+       "support": 159,
+       "predicted": 105
+      },
+      "bank account number": {
+       "precision": 0.976,
+       "recall": 0.988,
+       "f1": 0.982,
+       "support": 84,
+       "predicted": 85
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 64,
+       "predicted": 64
+      },
+      "date of birth": {
+       "precision": 0.95,
+       "recall": 0.961,
+       "f1": 0.956,
+       "support": 179,
+       "predicted": 181
+      },
+      "date": {
+       "precision": 0.448,
+       "recall": 0.879,
+       "f1": 0.593,
+       "support": 264,
+       "predicted": 518
+      },
+      "address": {
+       "precision": 0.127,
+       "recall": 0.037,
+       "f1": 0.057,
+       "support": 190,
+       "predicted": 55
+      },
+      "city": {
+       "precision": 0.791,
+       "recall": 0.739,
+       "f1": 0.764,
+       "support": 230,
+       "predicted": 215
+      },
+      "location": {
+       "precision": 0.281,
+       "recall": 0.92,
+       "f1": 0.431,
+       "support": 100,
+       "predicted": 327
+      },
+      "zip code": {
+       "precision": 0.474,
+       "recall": 1.0,
+       "f1": 0.643,
+       "support": 117,
+       "predicted": 247
+      },
+      "age": {
+       "precision": 0.019,
+       "recall": 0.053,
+       "f1": 0.028,
+       "support": 76,
+       "predicted": 208
+      },
+      "organization": {
+       "precision": 0.455,
+       "recall": 0.749,
+       "f1": 0.566,
+       "support": 167,
+       "predicted": 275
+      },
+      "user name": {
+       "precision": 0.761,
+       "recall": 0.938,
+       "f1": 0.84,
+       "support": 241,
+       "predicted": 297
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.081,
+       "f1": 0.149,
+       "support": 124,
+       "predicted": 10
+      },
+      "student id": {
+       "precision": 0.979,
+       "recall": 0.784,
+       "f1": 0.871,
+       "support": 176,
+       "predicted": 141
+      }
+     },
+     "sentences": 1000
+    },
+    "string": {
+     "micro": {
+      "precision": 0.68,
+      "recall": 0.794,
+      "f1": 0.732,
+      "f1_ci95": [
+       0.719,
+       0.745
+      ],
+      "tp": 2656,
+      "fp": 1250,
+      "fn": 690
+     },
+     "types": {
+      "person name": {
+       "precision": 0.89,
+       "recall": 0.896,
+       "f1": 0.893,
+       "support": 587,
+       "predicted": 591
+      },
+      "email": {
+       "precision": 0.994,
+       "recall": 1.0,
+       "f1": 0.997,
+       "support": 340,
+       "predicted": 342
+      },
+      "phone number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 248,
+       "predicted": 248
+      },
+      "national id": {
+       "precision": 0.971,
+       "recall": 0.642,
+       "f1": 0.773,
+       "support": 159,
+       "predicted": 105
+      },
+      "bank account number": {
+       "precision": 0.976,
+       "recall": 0.988,
+       "f1": 0.982,
+       "support": 84,
+       "predicted": 85
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 64,
+       "predicted": 64
+      },
+      "date of birth": {
+       "precision": 0.95,
+       "recall": 0.961,
+       "f1": 0.956,
+       "support": 179,
+       "predicted": 181
+      },
+      "date": {
+       "precision": 0.448,
+       "recall": 0.879,
+       "f1": 0.593,
+       "support": 264,
+       "predicted": 518
+      },
+      "address": {
+       "precision": 0.127,
+       "recall": 0.037,
+       "f1": 0.057,
+       "support": 190,
+       "predicted": 55
+      },
+      "city": {
+       "precision": 0.791,
+       "recall": 0.739,
+       "f1": 0.764,
+       "support": 230,
+       "predicted": 215
+      },
+      "location": {
+       "precision": 0.281,
+       "recall": 0.92,
+       "f1": 0.431,
+       "support": 100,
+       "predicted": 327
+      },
+      "zip code": {
+       "precision": 0.474,
+       "recall": 1.0,
+       "f1": 0.643,
+       "support": 117,
+       "predicted": 247
+      },
+      "age": {
+       "precision": 0.019,
+       "recall": 0.053,
+       "f1": 0.028,
+       "support": 76,
+       "predicted": 207
+      },
+      "organization": {
+       "precision": 0.455,
+       "recall": 0.749,
+       "f1": 0.566,
+       "support": 167,
+       "predicted": 275
+      },
+      "user name": {
+       "precision": 0.766,
+       "recall": 0.938,
+       "f1": 0.843,
+       "support": 241,
+       "predicted": 295
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.081,
+       "f1": 0.149,
+       "support": 124,
+       "predicted": 10
+      },
+      "student id": {
+       "precision": 0.979,
+       "recall": 0.784,
+       "f1": 0.871,
+       "support": 176,
+       "predicted": 141
+      }
+     },
+     "sentences": 1000
+    },
+    "negatives": {
+     "sentences": 153,
+     "false_positives": 397
+    }
+   },
+   "v1": {
+    "span": {
+     "micro": {
+      "precision": 0.774,
+      "recall": 0.882,
+      "f1": 0.824,
+      "f1_ci95": [
+       0.815,
+       0.834
+      ],
+      "tp": 2951,
+      "fp": 863,
+      "fn": 395
+     },
+     "types": {
+      "person name": {
+       "precision": 0.911,
+       "recall": 0.888,
+       "f1": 0.899,
+       "support": 587,
+       "predicted": 572
+      },
+      "email": {
+       "precision": 0.631,
+       "recall": 1.0,
+       "f1": 0.774,
+       "support": 340,
+       "predicted": 539
+      },
+      "phone number": {
+       "precision": 0.98,
+       "recall": 1.0,
+       "f1": 0.99,
+       "support": 248,
+       "predicted": 253
+      },
+      "national id": {
+       "precision": 0.889,
+       "recall": 0.906,
+       "f1": 0.897,
+       "support": 159,
+       "predicted": 162
+      },
+      "bank account number": {
+       "precision": 0.73,
+       "recall": 1.0,
+       "f1": 0.844,
+       "support": 84,
+       "predicted": 115
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 64,
+       "predicted": 64
+      },
+      "date of birth": {
+       "precision": 0.844,
+       "recall": 1.0,
+       "f1": 0.916,
+       "support": 179,
+       "predicted": 212
+      },
+      "date": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 264,
+       "predicted": 264
+      },
+      "address": {
+       "precision": 0.818,
+       "recall": 0.921,
+       "f1": 0.866,
+       "support": 190,
+       "predicted": 214
+      },
+      "city": {
+       "precision": 0.722,
+       "recall": 0.396,
+       "f1": 0.511,
+       "support": 230,
+       "predicted": 126
+      },
+      "location": {
+       "precision": 0.747,
+       "recall": 0.65,
+       "f1": 0.695,
+       "support": 100,
+       "predicted": 87
+      },
+      "zip code": {
+       "precision": 0.562,
+       "recall": 1.0,
+       "f1": 0.72,
+       "support": 117,
+       "predicted": 208
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 76,
+       "predicted": 76
+      },
+      "organization": {
+       "precision": 0.694,
+       "recall": 0.802,
+       "f1": 0.744,
+       "support": 167,
+       "predicted": 193
+      },
+      "user name": {
+       "precision": 0.453,
+       "recall": 0.959,
+       "f1": 0.615,
+       "support": 241,
+       "predicted": 510
+      },
+      "personal url": {
+       "precision": 0.984,
+       "recall": 0.508,
+       "f1": 0.67,
+       "support": 124,
+       "predicted": 64
+      },
+      "student id": {
+       "precision": 1.0,
+       "recall": 0.881,
+       "f1": 0.937,
+       "support": 176,
+       "predicted": 155
+      }
+     },
+     "sentences": 1000
+    },
+    "string": {
+     "micro": {
+      "precision": 0.774,
+      "recall": 0.882,
+      "f1": 0.824,
+      "f1_ci95": [
+       0.815,
+       0.834
+      ],
+      "tp": 2951,
+      "fp": 863,
+      "fn": 395
+     },
+     "types": {
+      "person name": {
+       "precision": 0.911,
+       "recall": 0.888,
+       "f1": 0.899,
+       "support": 587,
+       "predicted": 572
+      },
+      "email": {
+       "precision": 0.631,
+       "recall": 1.0,
+       "f1": 0.774,
+       "support": 340,
+       "predicted": 539
+      },
+      "phone number": {
+       "precision": 0.98,
+       "recall": 1.0,
+       "f1": 0.99,
+       "support": 248,
+       "predicted": 253
+      },
+      "national id": {
+       "precision": 0.889,
+       "recall": 0.906,
+       "f1": 0.897,
+       "support": 159,
+       "predicted": 162
+      },
+      "bank account number": {
+       "precision": 0.73,
+       "recall": 1.0,
+       "f1": 0.844,
+       "support": 84,
+       "predicted": 115
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 64,
+       "predicted": 64
+      },
+      "date of birth": {
+       "precision": 0.844,
+       "recall": 1.0,
+       "f1": 0.916,
+       "support": 179,
+       "predicted": 212
+      },
+      "date": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 264,
+       "predicted": 264
+      },
+      "address": {
+       "precision": 0.818,
+       "recall": 0.921,
+       "f1": 0.866,
+       "support": 190,
+       "predicted": 214
+      },
+      "city": {
+       "precision": 0.722,
+       "recall": 0.396,
+       "f1": 0.511,
+       "support": 230,
+       "predicted": 126
+      },
+      "location": {
+       "precision": 0.747,
+       "recall": 0.65,
+       "f1": 0.695,
+       "support": 100,
+       "predicted": 87
+      },
+      "zip code": {
+       "precision": 0.562,
+       "recall": 1.0,
+       "f1": 0.72,
+       "support": 117,
+       "predicted": 208
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 76,
+       "predicted": 76
+      },
+      "organization": {
+       "precision": 0.694,
+       "recall": 0.802,
+       "f1": 0.744,
+       "support": 167,
+       "predicted": 193
+      },
+      "user name": {
+       "precision": 0.453,
+       "recall": 0.959,
+       "f1": 0.615,
+       "support": 241,
+       "predicted": 510
+      },
+      "personal url": {
+       "precision": 0.984,
+       "recall": 0.508,
+       "f1": 0.67,
+       "support": 124,
+       "predicted": 64
+      },
+      "student id": {
+       "precision": 1.0,
+       "recall": 0.881,
+       "f1": 0.937,
+       "support": 176,
+       "predicted": 155
+      }
+     },
+     "sentences": 1000
+    },
+    "negatives": {
+     "sentences": 153,
+     "false_positives": 61
+    }
+   },
+   "v2": {
+    "span": {
+     "micro": {
+      "precision": 0.959,
+      "recall": 0.99,
+      "f1": 0.974,
+      "f1_ci95": [
+       0.97,
+       0.978
+      ],
+      "tp": 3312,
+      "fp": 142,
+      "fn": 34
+     },
+     "types": {
+      "person name": {
+       "precision": 0.914,
+       "recall": 1.0,
+       "f1": 0.955,
+       "support": 587,
+       "predicted": 642
+      },
+      "email": {
+       "precision": 0.994,
+       "recall": 1.0,
+       "f1": 0.997,
+       "support": 340,
+       "predicted": 342
+      },
+      "phone number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 248,
+       "predicted": 248
+      },
+      "national id": {
+       "precision": 0.958,
+       "recall": 1.0,
+       "f1": 0.978,
+       "support": 159,
+       "predicted": 166
+      },
+      "bank account number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 84,
+       "predicted": 84
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 64,
+       "predicted": 64
+      },
+      "date of birth": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 179,
+       "predicted": 179
+      },
+      "date": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 264,
+       "predicted": 264
+      },
+      "address": {
+       "precision": 0.995,
+       "recall": 0.995,
+       "f1": 0.995,
+       "support": 190,
+       "predicted": 190
+      },
+      "city": {
+       "precision": 0.855,
+       "recall": 1.0,
+       "f1": 0.922,
+       "support": 230,
+       "predicted": 269
+      },
+      "location": {
+       "precision": 0.825,
+       "recall": 0.8,
+       "f1": 0.812,
+       "support": 100,
+       "predicted": 97
+      },
+      "zip code": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 117,
+       "predicted": 117
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 76,
+       "predicted": 76
+      },
+      "organization": {
+       "precision": 0.912,
+       "recall": 0.988,
+       "f1": 0.948,
+       "support": 167,
+       "predicted": 181
+      },
+      "user name": {
+       "precision": 0.98,
+       "recall": 1.0,
+       "f1": 0.99,
+       "support": 241,
+       "predicted": 246
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.911,
+       "f1": 0.954,
+       "support": 124,
+       "predicted": 113
+      },
+      "student id": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 176,
+       "predicted": 176
+      }
+     },
+     "sentences": 1000
+    },
+    "string": {
+     "micro": {
+      "precision": 0.96,
+      "recall": 0.99,
+      "f1": 0.975,
+      "f1_ci95": [
+       0.971,
+       0.979
+      ],
+      "tp": 3312,
+      "fp": 138,
+      "fn": 34
+     },
+     "types": {
+      "person name": {
+       "precision": 0.917,
+       "recall": 1.0,
+       "f1": 0.957,
+       "support": 587,
+       "predicted": 640
+      },
+      "email": {
+       "precision": 0.994,
+       "recall": 1.0,
+       "f1": 0.997,
+       "support": 340,
+       "predicted": 342
+      },
+      "phone number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 248,
+       "predicted": 248
+      },
+      "national id": {
+       "precision": 0.958,
+       "recall": 1.0,
+       "f1": 0.978,
+       "support": 159,
+       "predicted": 166
+      },
+      "bank account number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 84,
+       "predicted": 84
+      },
+      "credit card number": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 64,
+       "predicted": 64
+      },
+      "date of birth": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 179,
+       "predicted": 179
+      },
+      "date": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 264,
+       "predicted": 264
+      },
+      "address": {
+       "precision": 0.995,
+       "recall": 0.995,
+       "f1": 0.995,
+       "support": 190,
+       "predicted": 190
+      },
+      "city": {
+       "precision": 0.855,
+       "recall": 1.0,
+       "f1": 0.922,
+       "support": 230,
+       "predicted": 269
+      },
+      "location": {
+       "precision": 0.825,
+       "recall": 0.8,
+       "f1": 0.812,
+       "support": 100,
+       "predicted": 97
+      },
+      "zip code": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 117,
+       "predicted": 117
+      },
+      "age": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 76,
+       "predicted": 76
+      },
+      "organization": {
+       "precision": 0.912,
+       "recall": 0.988,
+       "f1": 0.948,
+       "support": 167,
+       "predicted": 181
+      },
+      "user name": {
+       "precision": 0.988,
+       "recall": 1.0,
+       "f1": 0.994,
+       "support": 241,
+       "predicted": 244
+      },
+      "personal url": {
+       "precision": 1.0,
+       "recall": 0.911,
+       "f1": 0.954,
+       "support": 124,
+       "predicted": 113
+      },
+      "student id": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 176,
+       "predicted": 176
+      }
+     },
+     "sentences": 1000
+    },
+    "negatives": {
+     "sentences": 153,
+     "false_positives": 32
+    }
+   },
+   "paired_deltas_span_f1": {
+    "v1 - base": {
+     "delta": 0.092,
+     "ci95": [
+      0.08,
+      0.105
+     ]
+    },
+    "v2 - base": {
+     "delta": 0.242,
+     "ci95": [
+      0.23,
+      0.255
+     ]
+    },
+    "v2 - v1": {
+     "delta": 0.15,
+     "ci95": [
+      0.14,
+      0.159
+     ]
+    }
+   }
+  }
+ }
+}
